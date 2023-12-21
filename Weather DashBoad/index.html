@@ -1,0 +1,223 @@
+<!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+  
+    <style media="screen">
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      background: #666
+    }
+    .card{
+      background: linear-gradient(135deg, #00feba, #5b548a);
+      color: #fff;
+      text-align: center;
+    }
+
+    .Weather-icon{
+       width: 170px;
+       margin-top: 30px;
+    }
+    .weather h1{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .weather h2{
+      font-size: 45px;
+      font-weight: 400;
+    }
+
+
+    .details{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      margin-top: 50px;
+    }
+    .col{
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+    .col img{
+      width: 40px;
+      margin-right: 10px;
+    }
+    .humidity, .wind{
+       font-size: 28px;
+       margin-top: 6px
+    }
+    .days-forecast h2{
+      font-size: 1.7rem;
+      margin: 20px 0;
+    }
+    .weather-cards{
+      display: flex;
+      font-size: 20px;
+      font-weight: 500;
+      gap: 20px;
+    }
+
+    .weather-cards .cards{
+      list-style: none;
+      color: black;
+      border-radius: 1px;
+
+
+    }
+    .weather-cards .cards h3{
+      color: white;
+      font-size: 40px;
+    }
+    .moreInfo h2{
+      text-align: left;
+      color: black;
+
+    }
+    .moreInfo p{
+      text-align: left;
+      color: black;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="weather">
+          <h2 class="city">San Franciso Forecast <br> Tonight </h2>
+        <img src="https://api.weather.gov/icons/land/night/tsra,70/rain,50?size=medium" class="weather-icon">
+        <h1 class="temp">Temperature: 51F</h1><br>
+
+        <p>Showers And Thunderstorms Likely then Chance Drizzle</p><br><br>
+        <p>Showers and thunderstorms likely before 7pm, then rain likely between 7pm and 10pm, then a chance of drizzle between 10pm and 3am, then a chance of drizzle <br>
+          and patchy fog between 3am and 4am, then patchy fog and a slight chance of drizzle. Cloudy. Low around 51, with temperatures rising to around 53 overnight.<br>
+           East wind 2 to 7 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible.</p><br>
+        <h1 class="updated">2023-12-20T18:00:00-08:00<h1>
+        <div class="details">
+          <div class="col">
+            <img src="C:\Users\batha\OneDrive\Desktop\Weather DashBoad\images\humidity.png" >
+            <div >
+              <p class="humidity">96%</p>
+              <p>Humidity</p>
+            </div>
+        </div>
+        <div class="col">
+          <img src="C:\Users\batha\OneDrive\Desktop\Weather DashBoad\images\wind.png" alt="">
+          <div >
+            <p class="wind">2 to 7mph</p>
+            <p>Wind speed</p>
+          </div>
+        </div>
+        </div>
+        <div class="days-forecast">
+            <h2>6-Days Forecast</h2><br>
+            <ul class="weather-cards">
+              <li class="cards">
+                <h3>Wednesday</h3>
+                <img src="https://api.weather.gov/icons/land/day/tsra,100/rain,90?size=medium" alt="weather-icon"><br>
+                <p>Temperature: 60F</p><br>
+                <p>windSpeed: 8 to 13 mph</p><br>
+                <p>relativeHumidity: 99%</p><br>
+              </li>
+              <li class="cards">
+                <h3>Thursday</h3>
+                <img src="https://api.weather.gov/icons/land/day/rain,30?size=medium" alt="weather-icon"><br>
+                <p>Temperature: 63F</p><br>
+                <p>windSpeed: 8 mph</p><br>
+                <p>relativeHumidity: 98%</p><br>
+              </li>
+              <li class="cards">
+                <h3>Friday</h3>
+                <img src="https://api.weather.gov/icons/land/day/rain,20?size=medium" alt="weather-icon"><br>
+                <p>Temperature: 61F</p><br>
+                <p>windSpeed: 5 to 13 mph</p><br>
+                <p>Humidity: 98%</p>
+              </li>
+              <li class="cards">
+                <h3>Saturday</h3>
+                <img src="https://api.weather.gov/icons/land/day/few?size=medium" alt="weather-icon"><br>
+                <p>Temperature: 58F</p><br>
+                <p>windSpeed: 12 mph</p><br>
+                <p>relativeHumidity: 81%</p><br>
+              </li>
+              <li class="cards">
+                <h3>Sunday</h3>
+                <img src="https://api.weather.gov/icons/land/day/sct/rain?size=medium" alt="weather-icon"><br>
+                <p>Temperature: 57F</p><br>
+                <p>windSpeed: 7 mph</p><br>
+                <p>relativeHumidity: 83%</p><br>
+              </li>
+              <li class="cards">
+                <h3>Monday</h3>
+                <img src="https://api.weather.gov/icons/land/day/rain?size=medium"><br>
+                <p>Temperature: 58F</p><br>
+                <p>windSpeed: 78mph</p><br>
+                <p>relativeHumidity: 84%</p><br>
+              </li>
+            </ul>
+        </div><br><br>
+        <div class="moreInfo">
+          <h2>Further Ahead</h2><br>
+          <ul class="weather-cards">
+            <li class="cards">
+              <h3>Tuesday</h3
+                <p>startTime: 2023-12-26T06:00:00-08:00</p>
+                <p>startTime: 2023-12-26T18:00:00-08:00</p>
+              <p>Temperature: 58F </p>
+              <p>WindSpeed: 8 mph</p>
+              <p>Humidity: 84%</p>
+            </li>
+          </ul><br>
+          <p>A slight chance of drizzle before 10am, then a slight chance of rain between 10am and 4pm, <br>
+            then a slight chance of drizzle between 4pm and 5pm.<br>
+             Mostly cloudy, with a high near 60.</p>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+
+        function GetInfo()
+        {
+          fetch("https://api.weather.gov/gridpoints/MTR/84,105/forecast")
+          .then(response => response.json())
+          .then(data =>{
+            for(i=0;i<5;i++)
+            {
+              document.getElementById("day"+(i+1)+"Temp").innerHTML = "Temp:"+Number(data.periods[i].temperature)+"F";
+            }
+            for(i=0;i<5;i++)
+            {
+              document.getElementById("img"+(i+1)).src = data.periods[i].icon + "png";
+            }
+          })
+          .catch(err => alert("Something went wrong"));
+
+        }
+
+        const d = new Date();
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        function CheckDay(day){
+          if(day + d.getDay() > 6){
+            return day + d.getDay()-7;
+          }
+          else {
+            return day + d.getDay();
+          }
+        }
+        for(i=0;i<5;i++){
+          document.getElementById("day"+(i+1)).innerHTML = weekday[CheckDay(i)];
+        }
+
+    </script>
+  </body>
+</html>
